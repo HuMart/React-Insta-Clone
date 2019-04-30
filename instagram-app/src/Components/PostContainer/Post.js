@@ -1,4 +1,4 @@
-import React from'react;
+import React from 'react';
 import CommentSection from "../CommentSection/CommentSection";
 
 const Post = props => {
@@ -13,9 +13,7 @@ const Post = props => {
            <div className='image-wrapper'>
            <img alt='imageUrl' className='post-image' src={props.imageUrl} />
            </div>
-
-
-
+           <CommentSection comments={props.post.comments}/>
         </div>
     )
 }

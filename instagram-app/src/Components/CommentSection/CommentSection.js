@@ -1,16 +1,24 @@
 import React from 'react';
 
-import './CommentSection.css';
+import './comment.css';
 
-const CommentSection = props => {
-    return (
-        <div>
-            { props.comment.text }
-        <div className = 'comment-section-div'>
-            <h5>{ props.comment.username }</h5>
-            <p>{ props.comment.text }</p>
-            </div>
-        </div>
-    );
+class CommentSection extends React.Component {
+ constructor(props) {
+     super(props);
+     this.state ={
+         comments: props.comments
+     }
+   }
+   render() {
+       return <div>
+           {this.state.comments.map(comment => {
+               return( <div className='comment-text'>
+               <span>{comment.text}</span>
+               <span className='user'>{comment.username}</span>
+               </div>
+               )
+           })}
+       </div>
+   }
 }
-export default CommentSection
+export default CommentSection;
