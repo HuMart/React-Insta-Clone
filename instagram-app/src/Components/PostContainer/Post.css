@@ -1,0 +1,28 @@
+.post-container-wrapper {
+    height: 500px;
+    width: 80%;
+    margin: 5px auto;
+  }
+  .p-box {
+    border: 1px solid #d3d3d3;
+    margin: 5px 0;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-image-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .p-header {
+    display: flex;
+  }
+  
+
+  .thumbnail-img {
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  
+  
