@@ -18,7 +18,7 @@ class CommentSection extends React.Component {
 
     submitHandler = e => {
         e.preventDefault();
-        const thisComment = {text: this.state.comment, username: 'hugo'};
+        const thisComment = {text: this.state.comment};
         const comments = this.state.comments.slice();
         comments.push(thisComment);
         this.setState({comments, comment: ''});
@@ -28,9 +28,9 @@ class CommentSection extends React.Component {
    render() {
        return (
            <div>
-           {this.state.comments.map(comment => {
+           {this.state.comments.map((comment, index) => {
                return(
-               <div className='comment-text'>
+               <div className='comment-text' key={index}>
                <span>{comment.text}</span>
                <span className='user'>-{comment.username}</span>
                </div>

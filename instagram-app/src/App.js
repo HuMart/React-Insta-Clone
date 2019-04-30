@@ -16,7 +16,7 @@ class App extends React.Component{
   componentDidMount() {
     this.setState({post: dummyData})
   }
-  postHandler = e => {
+  postHandler = e=> {
     const post = this.state.post.filter(post => {
       if(post.username.includes(e.target.value)) {
         return post;

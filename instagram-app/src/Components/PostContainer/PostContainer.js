@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const PostContainer = props => {
   return (
     <div className="post-container-wrapper">
-      {props.post.map(post => <Post post={post} />)}
+      {props.post.map((post, index) => <Post post={post} key={index} />)}
     </div>
   );
 };
