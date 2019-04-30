@@ -1,19 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-class SearchBar extends React.Component  {
-    render(){
-        return(
-           <nav className="Nav">
-             <div className="Nav-menu">
-               <div className="Nav-word">
-                <img src="" className="Nav-logo"/>    
-                <p className="instagram">
-                 Instagram
-                </p> 
-               </div>
-             </div>
-           </nav>
-        )
-    }
+
+const SearchBar = () => {
+    return (
+      <div>
+      <input type='text' placeholder='search' />
+      
+    </div>
+    );
+    
 }
 export default SearchBar;
