@@ -1,45 +1,41 @@
 import React from 'react';
 import './App.css';
+import Logo from './assets/iglogo.jpg'
 import dummyData from './dummy-data';
 import SearchBar from './Components/SearchBar/SearchBar'
 import PostContainer from './Components/PostContainer/PostContainer';
-import PropTypes from 'prop-types';
+import {Button} from 'reactstrap';
+import CommentSection from './Components/CommentSection/CommentSection';
 
 class App extends React.Component{
   constructor() {
     super();
     this.state = {
-      post: [],
-      filterPost: []
-    };
+      data: dummyData
+    }
   }
-  componentDidMount() {
-    this.setState({post: dummyData})
-  }
-  postHandler = e=> {
-    const post = this.state.post.filter(post => {
-      if(post.username.includes(e.target.value)) {
-        return post;
-      }
-    });
-    this.setState({filterPost: post})
-  }
-
-
-
   render() {
-    return(
-      <div className='App'>
-        <SearchBar searchPost={this.postHandler}/>
-        <PostContainer post= {
-          this.state.filterPost.length > 0 
-          ? this.state.filterPost 
-          : this.state.post
-        }
-        />        
-
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={Logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+          <a
+            className=""
+            href=""
+            target=""
+            rel=""
+          >
+           
+          </a>          
+        </header>
+          <SearchBar />
+          <PostContainer />
+          <CommentSection />
       </div>
-    )
+    );
   }
 }
 

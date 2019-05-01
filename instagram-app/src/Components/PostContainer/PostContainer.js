@@ -1,16 +1,12 @@
-import React from "react";
-import Post from "./Post";
-import "./Post.css";
-import PropTypes from 'prop-types';
+import React from 'react'
+import './Post.css'
 
 const PostContainer = props => {
-  return (
-    <div className="post-container-wrapper">
-      {props.post.map((post, index) => <Post post={post} key={index} />)}
+  return(
+    <div className="postContainer">
+      This is where the Post Container is gonna end up
     </div>
-  );
-};
-PostContainer.propTypes = {
- post: PropTypes.array
+  )
 }
-export default PostContainer;
+
+export default PostContainer; 
