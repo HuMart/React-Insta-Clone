@@ -1,5 +1,6 @@
 .commentSection {
-  border: 1px solid purple;
+  display: flex;
+  align-content: flex-start;
   margin: 10px;
   padding: 10px;
 } 

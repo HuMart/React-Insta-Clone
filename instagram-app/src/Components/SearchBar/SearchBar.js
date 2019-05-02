@@ -6,15 +6,12 @@ import * as Icon from 'react-feather'
 const SearchBar = props => {
   return(
     <div className="searchBar">
-      <h1>
-        Search Bar goes here
-      </h1>
       <div className='searchBarLeft'>
       <Icon.Instagram className="instaIcon" />
       <img className="instaCursive" src="https://fontmeme.com/images/instagram-new-logo.png" alt="Instagram cursive logo"/>
       </div>
       <Form>
-        <FormGroup>
+        <FormGroup className='form-group'>
           <Input type="search" name="search" id="exampleSearch" placeholder="🔍 Search" />
         </FormGroup>
         </Form>

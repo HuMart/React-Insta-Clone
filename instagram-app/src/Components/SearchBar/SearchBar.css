@@ -1,7 +1,10 @@
 .searchBar{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
+  width: 50%;
+  margin: 5px auto;
+  border-bottom: 1px solid gray;
 }
 
 .searchBarLeft {
