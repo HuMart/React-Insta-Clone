@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Comment from './Comment';
 import CommentInput from './CommentInput';
-import * as Icon from 'react-feather';
+import * as Icon from 'react-feather'
 
 class CommentSection extends React.Component {
     constructor(props) {
