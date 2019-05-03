@@ -12,10 +12,15 @@ const SearchBar = props => {
       </div>
       <Form>
         <FormGroup className='form-group'>
-          <Input type="search" name="search" id="exampleSearch" placeholder="🔍 Search" />
+          <Input 
+            type="search" 
+            name="search" 
+            id="exampleSearch" 
+            placeholder="🔍 Add Search"
+            onKeyDown={props.searchPost} />
         </FormGroup>
-        </Form>
-        <div className="searchBarRight">
+      </Form>
+      <div className="searchBarRight">
         <Icon.Compass className="navIcons" /> 
         <Icon.Heart className="navIcons" />
         <Icon.User className="navIcons" />

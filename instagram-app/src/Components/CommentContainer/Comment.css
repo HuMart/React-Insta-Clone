@@ -1,6 +1,14 @@
 .commentSection {
-  display: flex;
   align-content: flex-start;
+  justify-content: center;
   margin: 10px;
   padding: 10px;
 } 
+
+.like-section-wrapper{
+  text-align: center;
+}
+
+.commentSection{
+  margin: 20px auto;
+}

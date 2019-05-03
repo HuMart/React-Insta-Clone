@@ -23,6 +23,7 @@ class Post extends React.Component {
     return (
       <div className='post-content'>
         <PostHeader 
+          className='post-header'
           username={this.props.post.username}
           thumbnailUrl={this.props.post.thumbnailUrl}
         />
